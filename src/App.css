@@ -1,38 +1,137 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 128px;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.drums {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.drum {
+  background-color: crimson;
+  border-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+
+.drum:hover {
+  opacity: 0.7;
+}
+
+.drum:active,
+.drum.playing {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.drum .key {
   color: white;
+  font-size: 3rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.synth {
+  background-color: green;
+  border-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.synth .key {
+  color: white;
+  font-size: 3rem;
+}
+
+.synth:hover {
+  opacity: 0.7;
+}
+
+.synth:active,
+.synth.playing {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.bass {
+  background-color: rgb(53, 127, 184);
+  border-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.bass .key {
+  color: white;
+  font-size: 3rem;
+}
+
+.bass:hover {
+  opacity: 0.7;
+}
+
+.bass:active,
+.bass.playing {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.guitar {
+  background-color: rgb(163, 48, 106);
+  border-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.guitar .key {
+  color: white;
+  font-size: 3rem;
+}
+
+.guitar:hover {
+  opacity: 0.7;
+}
+
+.guitar:active,
+.guitar.playing {
+  transform: scale(1.1);
+  opacity: 0.5;
 }
